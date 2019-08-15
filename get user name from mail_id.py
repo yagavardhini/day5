@@ -1,6 +1,5 @@
 import re
-
-email = "john@google.com elise@python.com"
-pattern = "\w+@(\w+).com"
-ans = re.findall(pattern,email)
-print(ans)
+emailAddress = str(input("enter the character:"))
+pat2 = "(\w+)@(\w+)\.(com)"
+r2 = re.match(pat2,emailAddress)
+print(r2.group(1))
